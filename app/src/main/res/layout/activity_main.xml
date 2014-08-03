@@ -20,7 +20,7 @@
             android:id="@+id/clearButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/clear_button" />
+            android:text="@string/clear" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bigBlueBox"
@@ -28,7 +28,10 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:background="#00f"
-        android:layout_weight="6">
+        android:layout_weight="6"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
         <LinearLayout
             android:id="@+id/orangeBox1"
             android:layout_width="0dp"
@@ -36,14 +39,75 @@
             android:background="#fb0"
             android:orientation="vertical"
             android:layout_weight="1">
+            <Button
+                android:id="@+id/sinButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/sin"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/cosButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/cos"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/tanButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/tan"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/piButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/pi"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/factorialButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/factorial"
+                android:layout_weight="1"/>
             </LinearLayout>
         <LinearLayout
             android:id="@+id/orangeBox2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#fb0"
+            android:background="#ffffd000"
             android:orientation="vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginRight="30dp">
+            <Button
+                android:id="@+id/lnButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/ln"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/logButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/log"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/eButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/e"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/powButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/power"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/sqrtButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/sqrt"
+                android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/blackBox"
@@ -51,7 +115,7 @@
             android:layout_height="match_parent"
             android:background="#000"
             android:orientation="vertical"
-            android:layout_weight="3">
+            android:layout_weight="4">
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
