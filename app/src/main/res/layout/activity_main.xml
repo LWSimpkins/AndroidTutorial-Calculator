@@ -1,42 +1,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainRedBox"
+    android:id="@+id/mainContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f00"
+    android:background="#000"
     android:orientation="vertical">
     <LinearLayout
-        android:id="@+id/bigGreenBox"
+        android:id="@+id/InputContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:background="#0f0"
-        android:layout_weight="1">
+        android:background="#000"
+        android:layout_weight="1"
+        android:layout_margin="25dp">
         <EditText
             android:id="@+id/editText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
         <Button
             android:id="@+id/clearButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/clear" />
+            android:layout_height="match_parent"
+            android:text="@string/clear"
+            android:layout_gravity="center"/>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/bigBlueBox"
+        android:id="@+id/buttonsContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:background="#00f"
+        android:background="#000"
         android:layout_weight="6"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="25dp">
         <LinearLayout
-            android:id="@+id/orangeBox1"
+            android:id="@+id/colContainer1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#fb0"
+            android:background="#000"
             android:orientation="vertical"
             android:layout_weight="1">
             <Button
@@ -76,13 +79,13 @@
                 style="@style/calcAdvanced"/>
             </LinearLayout>
         <LinearLayout
-            android:id="@+id/orangeBox2"
+            android:id="@+id/colContainer2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:background="#ffffd000"
+            android:background="#000"
             android:orientation="vertical"
             android:layout_weight="1"
-            android:layout_marginRight="30dp">
+            android:layout_marginRight="25dp">
             <Button
                 android:id="@+id/lnButton"
                 android:layout_width="match_parent"
@@ -120,17 +123,17 @@
                 style="@style/calcAdvanced"/>
         </LinearLayout>
         <LinearLayout
-            android:id="@+id/blackBox"
+            android:id="@+id/colContainer3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="#000"
             android:orientation="vertical"
             android:layout_weight="4">
             <LinearLayout
-                android:id="@+id/greenBox1"
+                android:id="@+id/rowContainer1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="#0b0"
+                android:background="#000"
                 android:orientation="horizontal"
                 android:layout_weight="1">
                 <Button
@@ -170,10 +173,10 @@
                     style="@style/calcBasic"/>
              </LinearLayout>
             <LinearLayout
-                android:id="@+id/greenBox2"
+                android:id="@+id/rowContainer2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="#0a0"
+                android:background="#000"
                 android:orientation="horizontal"
                 android:layout_weight="1">
                 <Button
@@ -213,24 +216,24 @@
                     style="@style/calcBasic"/>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/blueBox"
+                android:id="@+id/subRowContainer"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="#00a"
+                android:background="#000"
                 android:orientation="horizontal"
                 android:layout_weight="2">
                 <LinearLayout
-                    android:id="@+id/redBox"
+                    android:id="@+id/subRowContainer2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="#a00"
+                    android:background="#000"
                     android:orientation="vertical"
                     android:layout_weight="4">
                     <LinearLayout
-                        android:id="@+id/greenBox3"
+                        android:id="@+id/rowContainer3"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:background="#0d0"
+                        android:background="#000"
                         android:orientation="horizontal"
                         android:layout_weight="1">
                         <Button
@@ -263,10 +266,10 @@
                             style="@style/calcBasic"/>
                     </LinearLayout>
                     <LinearLayout
-                        android:id="@+id/greenBox4"
+                        android:id="@+id/rowContainer4"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:background="#0c0"
+                        android:background="#000"
                         android:orientation="horizontal"
                         android:layout_weight="1">
                         <Button
