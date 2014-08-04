@@ -4,5 +4,24 @@
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
+    <!--
+    - Custom style for dark grey buttons with white text
+    - sp for text sizes, just like using dp for view sizes
+    -->
+    <style name="calcAdvanced">
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#333</item>
+        <item name="android:textSize">23sp</item>
+    </style>
+    <style name="calcBasic">
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#333</item>
+        <item name="android:textSize">27sp</item>
+    </style>
+    <style name="calcNumPad">
+        <item name="android:textColor">#fff</item>
+        <item name="android:background">#555</item>
+        <item name="android:textSize">27sp</item>
+    </style>
 
 </resources>
